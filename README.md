@@ -14,9 +14,11 @@ into the correct output.
 - ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/36dcdeb4-7f2a-429f-a23e-185279db5a14)
 
 # Code 
+`
 public static String OldPhonePad(string input) {
 //Please write your implementaion here.
 }
+`
 # Examples outpus:
 - OldPhonePad(“33#”) => output: E
 - OldPhonePad(“227*#”) => output: B
