@@ -8,8 +8,8 @@ class Program
         Console.Write("Please Type Digit:");
         string inputDigits =Console.ReadLine(); 
         var result = EncodingUtility.OldPhonePad(inputDigits);
-        Console.WriteLine($"inputed Digits:{inputDigits}");
-        Console.WriteLine("OUT RESULT");
+        Console.WriteLine($"Inputed Digits:{inputDigits}");
+        Console.WriteLine("Output:");
         foreach (var word in result)
         {
             Console.Write(word);

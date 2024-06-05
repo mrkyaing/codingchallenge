@@ -42,33 +42,41 @@ namespace CodingChallenge
         private static List<string> GenerateWords(string digits)
         {
             var alphabest = new List<string>();
-            if (0 == digits.Length)
+            try
             {
-                return alphabest;
-            }
-          
-        starOccurence: {
-                int indexOfStar = digits.IndexOf('*');
-                if (indexOfStar > 0)
+                if (0 == digits.Length)
                 {
-                    digits= ReplaceCharAtIndex(digits, indexOfStar, ' ');
-                    digits = digits.Remove(indexOfStar - 1, 1);
-                    if (digits.Contains('*')) goto starOccurence;
+                    return alphabest;
+                }
+
+            StarOccurence:
+                {
+                    int indexOfStar = digits.IndexOf('*');
+                    if (indexOfStar > 0)
+                    {
+                        digits = ReplaceCharAtIndex(digits, indexOfStar, ' ');
+                        digits = digits.Remove(indexOfStar - 1, 1);
+                        if (digits.Contains('*')) goto StarOccurence;
+                    }
+                }
+                string[] splittedDigit = digits.Split(' ');
+                foreach (string digit in splittedDigit)
+                {
+                    var occurenceModels = digit.ToList().GroupBy(c => c).Select(c => new OccurenceModel(c.Key, c.Count()));
+                    foreach (var occurence in occurenceModels)
+                    {
+                        char[] results = keypadMapping[occurence.Digit].ToArray();
+                        alphabest.Add(results[occurence.Count - 1].ToString().ToUpper());
+                    }
                 }
             }
-            string[] splittedDigit = digits.Split(' ');
-            foreach (string digit in splittedDigit)
+            catch (Exception ex)
             {
-                var occurenceModels = digit.ToList().GroupBy(c => c).Select(c => new OccurenceModel(c.Key, c.Count()));
-                foreach (var occurence in occurenceModels)
-                {
-                    char[] results = keypadMapping[occurence.Digit].ToArray();
-                    alphabest.Add(results[occurence.Count - 1].ToString().ToUpper());
-                }
+               Console.WriteLine(ex.Message);
             }
             return alphabest;
         }
-        static string ReplaceCharAtIndex(string input, int index, char newChar)
+      private  static string ReplaceCharAtIndex(string input, int index, char newChar)
         {
             if (index < 0 || index >= input.Length)
             {
