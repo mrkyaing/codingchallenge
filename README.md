@@ -65,7 +65,7 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
 # Software Requirement
 - .Net Core 8.0
-- Visual Studio 2022 or Visual Studio Code
+- Visual Studio 2022 IDE or Visual Studio Code
 - Language : C#
 
 
