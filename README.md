@@ -29,7 +29,6 @@ button after each other: “222 2 22” -> “CAB”.
 private static List<string> GenerateWords(string digits){
 //DO WORD GENERATE PROCESS 
 }
-- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
 ```
 ## Method 3 **ReplaceCharAtIndex(string input, int index, char newChar)**
 - This method is encapsulated method for replacing the charactor for specific position and new charactor.
@@ -38,6 +37,7 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
     //DO REPLACE PROCESS 
 }
 ```
+- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
 # Examples outpus:
 - OldPhonePad(“33#”) => output: E
 - OldPhonePad(“227*#”) => output: B
