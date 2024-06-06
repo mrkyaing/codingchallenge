@@ -62,7 +62,8 @@ private static string GenerateWords(string digits){
         }
 ```
 - https://github.com/mrkyaing/codingchallenge/blob/main/CodingChallengeUnitTest/KeyPhonePadUnitTest.cs
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/3dca1a94-7943-4569-a3c9-0e025882dd60)
+
 # Software Requirement
 - Framework :.Net Core 8.0
 - Tools     :Visual Studio 2022 IDE or Visual Studio Code
