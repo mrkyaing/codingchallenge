@@ -69,10 +69,10 @@ private static string GenerateWords(string digits){
 - Tools     :Visual Studio 2022 IDE or Visual Studio Code
 - Language  : C#
 - Main Program Run
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/3fc776fa-c694-421b-ae50-62f4a7c92f2a)
-
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/bd695e33-64e9-4d73-846a-d3ac4aca4cf8)
 - Unit Test Project run
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/2c92acab-af45-4e7f-989b-bc9c15dacf1d)
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/fa46882e-6cec-4276-83ee-b9ef6df3e72b)
+
 # How to Get Started with the OldPhonePad encoding from digits to english alphabet  as C# Library 
 - If you can use this OldPhonePad(string input) in your project,you can reference this DLL(Dynamic Link Library) file in your project .
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/8cfba5be-06d2-4b7e-a0bc-4694e4ed32fd)
