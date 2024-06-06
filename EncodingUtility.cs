@@ -2,7 +2,8 @@ namespace CodingChallenge
 {
     public class EncodingUtility
     {
-        private static readonly Dictionary<char, string> keypadMapping = new Dictionary<char, string>{
+        //keypad dictionary for inputed digit(s) to corrected english alphabet
+        private static readonly Dictionary<char, string> _keypadMapping = new Dictionary<char, string>{
                         {'1', "&\'("},
                         {'2', "abc"},
                         {'3', "def"},
@@ -20,7 +21,7 @@ namespace CodingChallenge
         ///Encoding process from the inputed (digital numbers)  to string (english alphabet)
         /// </summary>
         /// <param name="input"></param>
-        /// <returns></returns>
+        /// <returns>Return lists of english alphabet according to keypad dictionary value(s). </returns>
         public static List<string> OldPhonePad(string input)
         {
             input = input.Replace("#", "");
@@ -30,15 +31,15 @@ namespace CodingChallenge
             {
                 return results;
             }
-
+            //generate words according to input digits.
             results = GenerateWords(input);
             return results;
         }
         /// <summary>
-        /// Generate the alphabest from digits according to dictionary source 
+        /// Generate the alphabest from digits according to keypad dictionary value(s). 
         /// </summary>
         /// <param name="digits"></param>
-        /// <returns>List of alphabet </returns>
+        /// <returns>Return lists of english alphabet by the occurrence of digit(s) in keypad dictionary source with group by approach.</returns>
         private static List<string> GenerateWords(string digits)
         {
             var alphabest = new List<string>();
@@ -49,23 +50,23 @@ namespace CodingChallenge
                     return alphabest;
                 }
 
-            StarOccurence:
+            StarOccurrence:
                 {
                     int indexOfStar = digits.IndexOf('*');
                     if (indexOfStar > 0)
                     {
                         digits = ReplaceCharAtIndex(digits, indexOfStar, ' ');
                         digits = digits.Remove(indexOfStar - 1, 1);
-                        if (digits.Contains('*')) goto StarOccurence;
+                        if (digits.Contains('*')) goto StarOccurrence;
                     }
                 }
-                string[] splittedDigit = digits.Split(' ');
-                foreach (string digit in splittedDigit)
+                string[] splittedDigits = digits.Split(' ');
+                foreach (string digit in splittedDigits)
                 {
                     var occurenceModels = digit.ToList().GroupBy(c => c).Select(c => new OccurenceModel(c.Key, c.Count()));
                     foreach (var occurence in occurenceModels)
                     {
-                        char[] results = keypadMapping[occurence.Digit].ToArray();
+                        char[] results = _keypadMapping[occurence.Digit].ToArray();
                         alphabest.Add(results[occurence.Count - 1].ToString().ToUpper());
                     }
                 }
@@ -76,13 +77,21 @@ namespace CodingChallenge
             }
             return alphabest;
         }
+
+        /// <summary>
+        /// encapsulated method for replacing the charactor for specific position and new charactor.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <param name="index"></param>
+        /// <param name="newChar"></param>
+        /// <returns></returns>
+        /// <exception cref="ArgumentOutOfRangeException"></exception>
       private  static string ReplaceCharAtIndex(string input, int index, char newChar)
         {
             if (index < 0 || index >= input.Length)
             {
                 throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
             }
-
             // Replace the character at the specified index
             return input.Substring(0, index) + newChar + input.Substring(index + 1);
         }
