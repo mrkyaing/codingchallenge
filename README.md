@@ -29,7 +29,7 @@ return results.ToUpper();
  }
 ```
 - https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
-## Method 2 **OldPhonePad(string digits)**
+## Method 2 **GenerateWords(string digits)**
 - This method is encapsuleted and generate the alphabest from digits according to keypad dictionary value(s). 
 ```
 private static string GenerateWords(string digits){
