@@ -43,10 +43,10 @@ namespace CodingChallenge
         {
             var alphabest = new List<char>();
             int index = 0;
-
+            //looping through for all input digits
             while (index < digits.Length)
             {
-                if ('*'==digits[index])
+                if ('*'.Equals(digits[index]))
                 {
                     if (alphabest.Count > 0)
                     {
@@ -72,6 +72,7 @@ namespace CodingChallenge
                         {
                             count++;
                         }
+                        //adding the char to the char[] to response.
                         alphabest.Add(letters[count - 1]);
                         index += count;
                     }
