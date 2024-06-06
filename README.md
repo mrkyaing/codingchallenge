@@ -83,7 +83,9 @@ using CodingChallenge;
 ```
 CodingChallenge.EncodingUtility(yourInputs);
 ```
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/039d0e4f-3f9b-41c4-94d0-f0cbc0bbd000)
+- Method invoking from the Client Program 
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/be95820e-0163-4d6b-a0db-978a207b37cf)
+
 
 
 
