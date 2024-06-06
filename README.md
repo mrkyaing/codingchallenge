@@ -8,22 +8,23 @@ in succession will return ‘B’.
 - You must pause for a second in order to type two characters from the same
 button after each other: “222 2 22” -> “CAB”.
 # Prompt:
-- Please design and document a class of method that will turn any input to OldPhonePad
-into the correct output.
+- Screen design of Old Phone KeyPad UI Simple
 - Assume that a send “#” will always be included at the end of every input.
-- ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/36dcdeb4-7f2a-429f-a23e-185279db5a14)
+ ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/36dcdeb4-7f2a-429f-a23e-185279db5a14)
 
 # Code Implementation  
 `
 //Encoding process from the inputed (digital numbers)  to string (english alphabet)
-public static String OldPhonePad(string input) {
-//get input from the user's keyboard
-//invoke to internal method for generate words
-}
+
+ public static String OldPhonePad(string input) {
+ //get input from the user's keyboard
+ //invoke to internal method for generate words
+ }
 `
 
 `
 //Generate the alphabest from digits according to keypad dictionary value(s). 
+
 private static List<string> GenerateWords(string digits){
 //DO PROCESS 
 }
@@ -31,6 +32,7 @@ private static List<string> GenerateWords(string digits){
 
 `
 //encapsulated method for replacing the charactor for specific position and new charactor.
+
 private  static string ReplaceCharAtIndex(string input, int index, char newChar){
     //DO REPLACE PROCESS 
 }
