@@ -71,7 +71,7 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/b2eccf58-3222-4fdb-958f-4407b77b94d8)
 - Unit Test Project run
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/2c92acab-af45-4e7f-989b-bc9c15dacf1d)
-# Use as Library
+# How to Get Started with the OldPhonePad encoding from digits to english alphabet  as C# Library 
 - If you can use this OldPhonePad(string input) in your project,you can reference this DLL(Dynamic Link Library) file in your project .
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/8cfba5be-06d2-4b7e-a0bc-4694e4ed32fd)
 - And then by invoking  this static method EncodingUtility.OldPhonePad(yourInputs) . 
