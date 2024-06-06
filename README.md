@@ -75,7 +75,14 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 - If you can use this OldPhonePad(string input) in your project,you can reference this DLL(Dynamic Link Library) file in your project .
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/8cfba5be-06d2-4b7e-a0bc-4694e4ed32fd)
 - And then by invoking  this static method EncodingUtility.OldPhonePad(yourInputs) .
-- by importing the Library as using namespace eg using CodingChallenge ; or fully qualified namespaces CodingChallenge.EncodingUtility(yourInputs);
+- by importing the Library as using namespace
+```
+using CodingChallenge;
+```
+-by fully qualified namespaces 
+```
+CodingChallenge.EncodingUtility(yourInputs);
+```
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/039d0e4f-3f9b-41c4-94d0-f0cbc0bbd000)
 
 
