@@ -79,7 +79,7 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 ```
 using CodingChallenge;
 ```
--by fully qualified namespaces 
+- by fully qualified namespaces 
 ```
 CodingChallenge.EncodingUtility(yourInputs);
 ```
