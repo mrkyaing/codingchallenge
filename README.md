@@ -68,7 +68,8 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 - Tools     :Visual Studio 2022 IDE or Visual Studio Code
 - Language  : C#
 - Main Program Run
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/b2eccf58-3222-4fdb-958f-4407b77b94d8)
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/3fc776fa-c694-421b-ae50-62f4a7c92f2a)
+
 - Unit Test Project run
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/2c92acab-af45-4e7f-989b-bc9c15dacf1d)
 # How to Get Started with the OldPhonePad encoding from digits to english alphabet  as C# Library 
