@@ -41,10 +41,11 @@ private static string GenerateWords(string digits){
 - OldPhonePad(“33#”) => output: E
 - OldPhonePad(“227*#”) => output: B
 - OldPhonePad(“4433555 555666#”) => output: HELLO
-- OldPhonePad(“8 88777444666*664#”) => output:TURINNG
+- OldPhonePad(“8 88777444666*664#”) => output:TURING
 - OldPhonePad(“888 85632*361*#”) => output:VTJMDDM
-# Screen Result
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/7c22f108-dd2a-4d35-9285-39562d1e82ae)
+# Output screen Result(s)
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/e29eeea5-bcba-4dad-bbdb-cf9374046ad3)
+
 # Unit Test Result by using xUnit 
 - xUnit Test used for unit testing for generate digit(s) to english alphabet .
 ```
@@ -54,8 +55,7 @@ private static string GenerateWords(string digits){
             // Arrange
             string inputDigits = "33#";
             // Act
-            List<string> expectedResult = ["E"];
-
+            string expectedResult = "E";
             // Assert
             var result = EncodingUtility.OldPhonePad(inputDigits);
             Assert.Equal(expectedResult, result); // Check if the result is as expected.
