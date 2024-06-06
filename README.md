@@ -1,3 +1,4 @@
+[[_TOC_]]
 # Coding Challenge
 Charactor enconding for input to the related english alphabet 
 # Requriement 
@@ -13,33 +14,34 @@ button after each other: “222 2 22” -> “CAB”.
  ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/36dcdeb4-7f2a-429f-a23e-185279db5a14)
 
 # Code Implementation  
-`
-//Encoding process from the inputed (digital numbers)  to string (english alphabet)
 
+## Method 1 **OldPhonePad(string input)**
+- This method do the encoding process from the inputed (digital numbers)  to string (english alphabet)
+```
  public static String OldPhonePad(string input) {
  //get input from the user's keyboard
  //invoke to internal method for generate words
  }
-`
-
-`
-//Generate the alphabest from digits according to keypad dictionary value(s). 
-
+```
+## Method 2 **OldPhonePad(string digits)**
+- This method is encapsuleted and generate the alphabest from digits according to keypad dictionary value(s). 
+```
 private static List<string> GenerateWords(string digits){
-//DO PROCESS 
+//DO WORD GENERATE PROCESS 
 }
-`
-
-`
-//encapsulated method for replacing the charactor for specific position and new charactor.
-
+```
+## Method 3 **ReplaceCharAtIndex(string input, int index, char newChar)**
+- This method is encapsulated method for replacing the charactor for specific position and new charactor.
+```
 private  static string ReplaceCharAtIndex(string input, int index, char newChar){
     //DO REPLACE PROCESS 
 }
-`
+```
 # Examples outpus:
 - OldPhonePad(“33#”) => output: E
 - OldPhonePad(“227*#”) => output: B
 - OldPhonePad(“4433555 555666#”) => output: HELLO
-- OldPhonePad(“8 88777444666*664#”) => output: ????? =>TURINNG
-- OldPhonePad(“888 85632*361*#”) => output: ????? =>VTJMDDM
+- OldPhonePad(“8 88777444666*664#”) => output:TURINNG
+- OldPhonePad(“888 85632*361*#”) => output:VTJMDDM
+# Screen Result
+- 

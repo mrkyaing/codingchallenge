@@ -17,7 +17,7 @@ class Program
                 var result = EncodingUtility.OldPhonePad(inputDigits);
                 if (result.Any())
                 {
-                    Console.Write("Output result(s):");
+                    Console.Write("Output result(s): ");
                     foreach (var word in result)
                     {
                         Console.Write(word);
