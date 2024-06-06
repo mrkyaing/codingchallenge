@@ -1,8 +1,7 @@
 ﻿namespace CodingChallenge;
-
 class Program
 {
-    private readonly static string CHOICEKEY = "y";
+    private readonly static string CHOICE_KEY = "y";
     static void Main(string[] args)
     {
         Console.WriteLine("Hello,Coding Chellengance!");
@@ -14,11 +13,11 @@ class Program
             string inputDigits = Console.ReadLine();
             do
             {
-                var result = EncodingUtility.OldPhonePad(inputDigits);
-                if (result.Any())
+                var results = EncodingUtility.OldPhonePad(inputDigits);
+                if (results.Any())
                 {
                     Console.Write("Output result(s): ");
-                    foreach (var word in result)
+                    foreach (var word in results)
                     {
                         Console.Write(word);
                     }
@@ -26,7 +25,7 @@ class Program
                 }
                 Console.Write("Do you try next time?, then type (y):");
                 nextTime = Console.ReadLine();
-                if (CHOICEKEY.Equals(nextTime))
+                if (CHOICE_KEY.Equals(nextTime))
                 {
                     Console.Write("Please type digit(s):");
                     inputDigits = Console.ReadLine();
