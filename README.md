@@ -14,7 +14,6 @@ button after each other: “222 2 22” -> “CAB”.
  ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/36dcdeb4-7f2a-429f-a23e-185279db5a14)
 
 # Code Implementation  
-
 ## Method 1 **OldPhonePad(string input)**
 - This method do the encoding process from the inputed (digital numbers)  to string (english alphabet)
 ```
@@ -23,6 +22,7 @@ button after each other: “222 2 22” -> “CAB”.
  //invoke to internal method for generate words
  }
 ```
+- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
 ## Method 2 **OldPhonePad(string digits)**
 - This method is encapsuleted and generate the alphabest from digits according to keypad dictionary value(s). 
 ```
@@ -30,6 +30,7 @@ private static List<string> GenerateWords(string digits){
 //DO WORD GENERATE PROCESS 
 }
 ```
+- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
 ## Method 3 **ReplaceCharAtIndex(string input, int index, char newChar)**
 - This method is encapsulated method for replacing the charactor for specific position and new charactor.
 ```
@@ -47,6 +48,21 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 # Screen Result
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/7c22f108-dd2a-4d35-9285-39562d1e82ae)
 # Unit Test Result by using xUnit 
+- xUnit Test used for unit testing for generate digit(s) to english alphabet .
+```
+[Fact]
+        public void ReturnEResultOldPhonePad()
+        {
+            // Arrange
+            string inputDigits = "33#";
+            // Act
+            List<string> expectedResult = ["E"];
+
+            // Assert
+            var result = EncodingUtility.OldPhonePad(inputDigits);
+            Assert.Equal(expectedResult, result); // Check if the result is as expected.
+        }
+```
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
 
 
