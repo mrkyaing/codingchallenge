@@ -10,7 +10,7 @@ namespace CodingChallengeUnitTest
             // Arrange
             string inputDigits = "33#";
             // Act
-            List<string> expectedResult = ["E"];
+            string expectedResult = "E";
 
             // Assert
             var result = EncodingUtility.OldPhonePad(inputDigits);
@@ -22,7 +22,7 @@ namespace CodingChallengeUnitTest
             // Arrange
             string inputDigits = "227*#";
             // Act
-            List<string> expectedResult = ["B"];
+            string expectedResult = "B";
 
             // Assert
             var result = EncodingUtility.OldPhonePad(inputDigits);
@@ -34,7 +34,7 @@ namespace CodingChallengeUnitTest
             // Arrange
             string inputDigits = "4433555 555666#";
             // Act
-            List<string> expectedResult = ["H","E","L","L","O"];
+            string expectedResult = "HELLO";
 
             // Assert
             var actualResult = EncodingUtility.OldPhonePad(inputDigits);
@@ -42,12 +42,12 @@ namespace CodingChallengeUnitTest
         }
 
         [Fact]
-        public void ReturnTURINNGResultOldPhonePad()
+        public void ReturnTURINGResultOldPhonePad()
         {
             // Arrange
             string inputDigits = "8 88777444666*664#";
             // Act
-            List<string> expectedResult = ["T", "U", "R", "I", "N","N","G"];
+            string expectedResult = "TURING";
 
             // Assert
             var actualResult = EncodingUtility.OldPhonePad(inputDigits);
@@ -60,7 +60,7 @@ namespace CodingChallengeUnitTest
             // Arrange
             string inputDigits = "4433555 555666 96667775553";
             // Act
-            List<string> expectedResult = ["H", "E", "L", "L", "O","W","O","R","L","D"];
+            string expectedResult = "HELLOWORLD";
 
             // Assert
             var actualResult = EncodingUtility.OldPhonePad(inputDigits);
@@ -72,7 +72,7 @@ namespace CodingChallengeUnitTest
             // Arrange
             string inputDigits = "222 2 22";
             // Act
-            List<string> expectedResult = ["C"];
+            string expectedResult = "C";
 
             // Assert
             var actualResult = EncodingUtility.OldPhonePad(inputDigits);
@@ -84,7 +84,7 @@ namespace CodingChallengeUnitTest
             // Arrange
             string inputDigits = "222 2 22";
             // Act
-            List<string> expectedResult = ["C","A","B"];
+            string expectedResult = "CAB";
 
             // Assert
             var actualResult = EncodingUtility.OldPhonePad(inputDigits);
