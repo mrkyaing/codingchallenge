@@ -1,13 +1,11 @@
 # Program analysis,design,implement,unit test(s) and functional test(s) for OldPhoneKeypad type process
-- An old phone keypad with alphabetical letters,a backspace key,and a send button (Analysis,Design,Implement & Unit Test with (C#.Net Core 8.0)
-- Charactor enconding for input to the related english alphabet 
-# Requriement 
+- An old phone keypad with alphabetical letters,a backspace key,and a send button to show the data to the UI.
+- Charactor enconding for input to the related english alphabet .
+# Functional requriement 
 - Here is an old phone keypad with alphabetical letters, a backspace key, and a send button.
-Each button has a number to identify it and pressing a button multiple times will cycle through the letters on it allowing each button to represent more than one letter.
-- For example, pressing 2 once will return ‘A’ but pressing twice
-in succession will return ‘B’.
-- You must pause for a second in order to type two characters from the same
-button after each other: “222 2 22” -> “CAB”.
+- Each button has a number to identify it and pressing a button multiple times will cycle through the letters on it allowing each button to represent more than one letter.
+- For example, pressing 2 once will return ‘A’ but pressing twice in succession will return ‘B’.
+- You must pause for a second in order to type two characters from the same button after each other: “222 2 22” -> “CAB”.
 # Prompt:
 - Screen design of Old Phone KeyPad UI Simple
 - Assume that a send “#” will always be included at the end of every input.
@@ -65,5 +63,9 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 ```
 - https://github.com/mrkyaing/codingchallenge/blob/main/CodingChallengeUnitTest/KeyPhonePadUnitTest.cs
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
+# Software Requirement
+- .Net Core 8.0
+- Visual Studio 2022 or Visual Studio Code
+- Language : C#
 
 
