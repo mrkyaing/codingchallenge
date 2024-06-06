@@ -44,4 +44,5 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 - OldPhonePad(“8 88777444666*664#”) => output:TURINNG
 - OldPhonePad(“888 85632*361*#”) => output:VTJMDDM
 # Screen Result
-- 
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/7c22f108-dd2a-4d35-9285-39562d1e82ae)
+
