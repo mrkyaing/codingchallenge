@@ -64,13 +64,14 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 - https://github.com/mrkyaing/codingchallenge/blob/main/CodingChallengeUnitTest/KeyPhonePadUnitTest.cs
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
 # Software Requirement
-- .Net Core 8.0
-- Visual Studio 2022 IDE or Visual Studio Code
-- Language : C#
+- Framework :.Net Core 8.0
+- Tools     :Visual Studio 2022 IDE or Visual Studio Code
+- Language  : C#
 - Main Program Run
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/dd5ef60a-e931-4128-891c-b9974dd4a714)
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/b2eccf58-3222-4fdb-958f-4407b77b94d8)
 - Unit Test Project run
-![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/b9c816be-636e-4c79-8844-91f8b653de53)
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/2c92acab-af45-4e7f-989b-bc9c15dacf1d)
+
 
 
 
