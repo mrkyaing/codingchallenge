@@ -1,13 +1,11 @@
 # Program analysis,design,implement,unit test(s) and functional test(s) for OldPhoneKeypad type process
-- An old phone keypad with alphabetical letters,a backspace key,and a send button (Analysis,Design,Implement & Unit Test with C# Coding Challenge)
-- Charactor enconding for input to the related english alphabet 
-# Requriement 
+- An old phone keypad with alphabetical letters,a backspace key,and a send button to show the data to the UI.
+- Charactor enconding for input to the related english alphabet .
+# Functional requriement 
 - Here is an old phone keypad with alphabetical letters, a backspace key, and a send button.
-Each button has a number to identify it and pressing a button multiple times will cycle through the letters on it allowing each button to represent more than one letter.
-- For example, pressing 2 once will return ‘A’ but pressing twice
-in succession will return ‘B’.
-- You must pause for a second in order to type two characters from the same
-button after each other: “222 2 22” -> “CAB”.
+- Each button has a number to identify it and pressing a button multiple times will cycle through the letters on it allowing each button to represent more than one letter.
+- For example, pressing 2 once will return ‘A’ but pressing twice in succession will return ‘B’.
+- You must pause for a second in order to type two characters from the same button after each other: “222 2 22” -> “CAB”.
 # Prompt:
 - Screen design of Old Phone KeyPad UI Simple
 - Assume that a send “#” will always be included at the end of every input.
@@ -63,6 +61,33 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
             Assert.Equal(expectedResult, result); // Check if the result is as expected.
         }
 ```
+- https://github.com/mrkyaing/codingchallenge/blob/main/CodingChallengeUnitTest/KeyPhonePadUnitTest.cs
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
+# Software Requirement
+- Framework :.Net Core 8.0
+- Tools     :Visual Studio 2022 IDE or Visual Studio Code
+- Language  : C#
+- Main Program Run
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/b2eccf58-3222-4fdb-958f-4407b77b94d8)
+- Unit Test Project run
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/2c92acab-af45-4e7f-989b-bc9c15dacf1d)
+# How to Get Started with the OldPhonePad encoding from digits to english alphabet  as C# Library 
+- If you can use this OldPhonePad(string input) in your project,you can reference this DLL(Dynamic Link Library) file in your project .
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/8cfba5be-06d2-4b7e-a0bc-4694e4ed32fd)
+- And then by invoking  this static method EncodingUtility.OldPhonePad(yourInputs) .
+- by importing the Library as using namespace
+```
+using CodingChallenge;
+```
+- by fully qualified namespaces 
+```
+CodingChallenge.EncodingUtility(yourInputs);
+```
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/039d0e4f-3f9b-41c4-94d0-f0cbc0bbd000)
+
+
+
+
+
 
 
