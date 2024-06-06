@@ -1,6 +1,6 @@
 # Program analysis,design,implement,unit test(s) and functional test(s) for OldPhoneKeypad type process
 - An old phone keypad with alphabetical letters,a backspace key,and a send button to show the data to the UI.
-- Charactor enconding for input to the related english alphabet .
+- Charactor mapping process  from inputted digit(s) to the defined english alphabet .
 # Functional requriement 
 - Here is an old phone keypad with alphabetical letters, a backspace key, and a send button.
 - Each button has a number to identify it and pressing a button multiple times will cycle through the letters on it allowing each button to represent more than one letter.
