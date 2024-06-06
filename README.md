@@ -13,27 +13,27 @@
 
 # Code Implementation  
 ## Method 1 **OldPhonePad(string input)**
-- This method do the encoding process from the inputed (digital numbers)  to string (english alphabet)
+- This method do the mapping process from the inputed (digital numbers)  to string (english alphabet)
 ```
- public static String OldPhonePad(string input) {
+ public static string OldPhonePad(string input) {
  //get input from the user's keyboard
- //invoke to internal method for generate words
+input = input.Replace("#", "");
+string results = null;
+if (string.IsNullOrEmpty(input))
+{
+    return results;
+}
+//generate words according to input digits.
+results = GenerateWords(input);
+return results.ToUpper();
  }
 ```
 - https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
 ## Method 2 **OldPhonePad(string digits)**
 - This method is encapsuleted and generate the alphabest from digits according to keypad dictionary value(s). 
 ```
-private static List<string> GenerateWords(string digits){
+private static string GenerateWords(string digits){
 //DO WORD GENERATE PROCESS 
-}
-```
-- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
-## Method 3 **ReplaceCharAtIndex(string input, int index, char newChar)**
-- This method is encapsulated method for replacing the charactor for specific position and new charactor.
-```
-private  static string ReplaceCharAtIndex(string input, int index, char newChar){
-    //DO REPLACE PROCESS 
 }
 ```
 - https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
