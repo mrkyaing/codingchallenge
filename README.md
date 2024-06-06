@@ -1,4 +1,3 @@
-[[_TOC_]]
 # Coding Challenge
 Charactor enconding for input to the related english alphabet 
 # Requriement 
@@ -45,4 +44,7 @@ private  static string ReplaceCharAtIndex(string input, int index, char newChar)
 - OldPhonePad(“888 85632*361*#”) => output:VTJMDDM
 # Screen Result
 ![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/7c22f108-dd2a-4d35-9285-39562d1e82ae)
+# Unit Test Result by using xUnit 
+![image](https://github.com/mrkyaing/codingchallenge/assets/9696016/821f136b-e29c-4c0b-b3ed-8b760214637d)
+
 
