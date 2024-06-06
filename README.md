@@ -37,7 +37,7 @@ private static string GenerateWords(string digits){
 }
 ```
 - https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
-# Examples outpus:
+# Examples output(s):
 - OldPhonePad(“33#”) => output: E
 - OldPhonePad(“227*#”) => output: B
 - OldPhonePad(“4433555 555666#”) => output: HELLO
