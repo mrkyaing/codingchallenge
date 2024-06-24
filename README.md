@@ -28,7 +28,7 @@ results = GenerateWords(input);
 return results.ToUpper();
  }
 ```
-- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
+- https://github.com/mrkyaing/codingchallenge/blob/main/CodingChallengeMain/EncodingUtility.cs
 ## Method 2 **GenerateWords(string digits)**
 - This method is encapsuleted and generate the alphabest from digits according to keypad dictionary value(s). 
 ```
@@ -36,8 +36,8 @@ private static string GenerateWords(string digits){
 //DO WORD GENERATE PROCESS 
 }
 ```
-- https://github.com/mrkyaing/codingchallenge/blob/main/EncodingUtility.cs
-# Examples outpus:
+- https://github.com/mrkyaing/codingchallenge/blob/main/CodingChallengeMain/EncodingUtility.cs
+# Examples output(s):
 - OldPhonePad(“33#”) => output: E
 - OldPhonePad(“227*#”) => output: B
 - OldPhonePad(“4433555 555666#”) => output: HELLO
