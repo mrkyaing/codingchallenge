@@ -90,5 +90,16 @@ namespace CodingChallengeUnitTest
             var actualResult = EncodingUtility.OldPhonePad(inputDigits);
             Assert.Equal(expectedResult, actualResult); // Check if the result is as expected.
         }
+        [Fact]
+        public void ReturnCorrectedResultGenerateWords()
+        {
+            //arrange
+            string input = "2 2 2";
+            //act 
+            string expectedResult = "aaa";
+            //assert
+            var actualResult=EncodingUtility.GenerateWords(input);
+            Assert.Equal(expectedResult, actualResult);
+        }
     }
 }

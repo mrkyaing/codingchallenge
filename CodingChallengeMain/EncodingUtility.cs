@@ -39,7 +39,7 @@ namespace CodingChallenge
         /// </summary>
         /// <param name="digits"></param>
         /// <returns>Return string of english alphabet by the occurrence of digit(s) in keypad string array source with deleteing process when occurs in * char at input string.</returns>
-        private static string GenerateWords(string digits)
+        public static string GenerateWords(string digits)
         {
             var alphabest = new List<char>();
             int index = 0;
