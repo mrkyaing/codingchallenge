@@ -46,6 +46,7 @@ namespace CodingChallenge
             //looping through for all input digits
             while (index < digits.Length)
             {
+                //if input charactor is * ,then remove before of it .
                 if ('*'.Equals(digits[index]))
                 {
                     if (alphabest.Count > 0)
@@ -56,6 +57,7 @@ namespace CodingChallenge
                 }
                 else
                 {
+                    //if input charactor is ' ' ,then not check in the _keypad[] and skip this charactor.
                     if (' '.Equals(digits[index]))
                     {
                         index++;
@@ -68,6 +70,7 @@ namespace CodingChallenge
                     {
                         int maxPresses = letters.Length;
                         int count = 1;
+                        //increase the count to get the charactor with related index
                         while (index + count < digits.Length && digits[index + count] == digits[index] && count < maxPresses)
                         {
                             count++;
