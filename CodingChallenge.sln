@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillPracticeBackendDev", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillPracticeBackendDev.UnitTests", "SkillPracticeBackendDev.UnitTests\SkillPracticeBackendDev.UnitTests.csproj", "{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AWebsite", "AWebsite\AWebsite.csproj", "{C8104758-7ED3-4B84-A34C-CA372D1A94A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8104758-7ED3-4B84-A34C-CA372D1A94A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8104758-7ED3-4B84-A34C-CA372D1A94A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8104758-7ED3-4B84-A34C-CA372D1A94A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8104758-7ED3-4B84-A34C-CA372D1A94A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

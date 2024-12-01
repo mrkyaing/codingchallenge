@@ -1,5 +1,4 @@
-﻿namespace SkillPracticeBackendDev.DI
-{
+﻿namespace SkillPracticeBackendDev.DI;
     public class GameManager
     {
         private readonly IPlayer _player1;
@@ -41,4 +40,4 @@
        Player2Win,
        Draw
     }
-}
+

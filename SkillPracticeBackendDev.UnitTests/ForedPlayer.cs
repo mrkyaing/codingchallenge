@@ -2,7 +2,7 @@
 
 namespace SkillPracticeBackendDev.UnitTests
 {
-    public class ForedPlayer : IPlayer
+    internal class ForedPlayer : IPlayer
     {
         private readonly Choice _choice;
 
