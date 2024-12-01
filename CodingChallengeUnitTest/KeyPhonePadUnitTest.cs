@@ -95,7 +95,7 @@ namespace CodingChallengeUnitTest
         {
             //arrange
             string input = "2 2 2";
-            //act 
+            //act
             string expectedResult = "aaa";
             //assert
             var actualResult=EncodingUtility.GenerateWords(input);

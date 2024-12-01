@@ -2,7 +2,7 @@ namespace CodingChallenge
 {
     public class EncodingUtility
     {
-        //keypad string[] for inputed digit(s) to corrected english alphabet
+        //keypad string[] for inputed digit(s) to corrected English alphabet
        private static readonly string[] _keypad = {
                                                                         "",     // 0
                                                                         "&\'(", // 1
@@ -17,10 +17,10 @@ namespace CodingChallenge
                                                                     };
 
         /// <summary>
-        ///Mapping process from the inputed (digital numbers)  to string (english alphabet).
+        ///Mapping process from the inputed (digital numbers)  to string (English alphabet).
         /// </summary>
         /// <param name="input"></param>
-        /// <returns>Return string value(s) of english alphabet according to keypad dictionary value(s). </returns>
+        /// <returns>Return string value(s) of English alphabet according to keypad dictionary value(s). </returns>
         public static string OldPhonePad(string input)
         {
             input = input.Replace("#", "");
@@ -35,10 +35,10 @@ namespace CodingChallenge
             return results.ToUpper();
         }
         /// <summary>
-        /// Generate the alphabest from digits according to keypad dictionary value(s). 
+        /// Generate the alphabets from digits according to keypad dictionary value(s).
         /// </summary>
         /// <param name="digits"></param>
-        /// <returns>Return string of english alphabet by the occurrence of digit(s) in keypad string array source with deleteing process when occurs in * char at input string.</returns>
+        /// <returns>Return string of English alphabet by the occurrence of digit(s) in keypad string array source with deleting process when occurs in * char at input string.</returns>
         public static string GenerateWords(string digits)
         {
             var alphabest = new List<char>();
@@ -46,7 +46,7 @@ namespace CodingChallenge
             //looping through for all input digits
             while (index < digits.Length)
             {
-                //if input charactor is * ,then remove before of it .
+                //if input character is * ,then remove before of it .
                 if ('*'.Equals(digits[index]))
                 {
                     if (alphabest.Count > 0)
@@ -57,7 +57,7 @@ namespace CodingChallenge
                 }
                 else
                 {
-                    //if input charactor is ' ' ,then not check in the _keypad[] and skip this charactor.
+                    //if input character is ' ' ,then not check in the _keypad[] and skip this character.
                     if (' '.Equals(digits[index]))
                     {
                         index++;
@@ -70,7 +70,7 @@ namespace CodingChallenge
                     {
                         int maxPresses = letters.Length;
                         int count = 1;
-                        //increase the count to get the charactor with related index
+                        //increase the count to get the character with related index
                         while (index + count < digits.Length && digits[index + count] == digits[index] && count < maxPresses)
                         {
                             count++;

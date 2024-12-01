@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CodingChallenge", "CodingCh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillPracticeBackendDev", "SkillPracticeBackendDev\SkillPracticeBackendDev.csproj", "{59690B9D-9796-4098-9211-076512F6FFF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkillPracticeBackendDev.UnitTests", "SkillPracticeBackendDev.UnitTests\SkillPracticeBackendDev.UnitTests.csproj", "{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{59690B9D-9796-4098-9211-076512F6FFF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59690B9D-9796-4098-9211-076512F6FFF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59690B9D-9796-4098-9211-076512F6FFF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0662A4-5F73-4D53-8AC5-ECB15A0E654D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

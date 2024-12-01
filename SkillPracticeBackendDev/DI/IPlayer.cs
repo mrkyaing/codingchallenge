@@ -1,6 +1,6 @@
 ﻿namespace SkillPracticeBackendDev.DI
 {
-    internal interface IPlayer
+    public interface IPlayer
     {
         Choice GetChoice();
     }

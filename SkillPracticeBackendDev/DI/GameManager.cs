@@ -1,6 +1,6 @@
 ﻿namespace SkillPracticeBackendDev.DI
 {
-    internal class GameManager
+    public class GameManager
     {
         private readonly IPlayer _player1;
         private readonly IPlayer _player2;
