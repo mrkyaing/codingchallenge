@@ -1,5 +1,4 @@
 ﻿namespace AWebsite.Middlewares;
-
 public class TimingMiddleware
 {
     private readonly ILogger<TimingMiddleware> _logger;
