@@ -15,7 +15,7 @@
           Choice p1=_player1.GetChoice();
           Choice p2=_player2.GetChoice();
           Console.Write($"Player 1 picks {p1} and player 2 picks {p2}.");
-            Console.WriteLine();
+         Console.WriteLine();
             if(p1==p2)
             return RoundResult.Draw;
 
