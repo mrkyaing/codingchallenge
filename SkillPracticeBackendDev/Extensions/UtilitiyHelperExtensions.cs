@@ -3,13 +3,10 @@ public static class UtilitiyHelperExtensions
 {
     public static double AverageHelper(this IEnumerable<int> sources)
     {
-        {
             if (sources  is null)
                 throw new ArgumentNullException(nameof(sources));
             return (double)sources.Sum()/sources.Count();
-        }
     }
-
     public static T Second<T>(this List<T> sources)
     {
         if(sources.Count>=2)

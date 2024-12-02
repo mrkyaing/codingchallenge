@@ -9,6 +9,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IWeatherService, WeatherService>();
+builder.Services.AddScoped<IFanService,FanService>();
+builder.Services.AddScoped<IProductService, ProductService>();
+//builder.Services.AddHttpClient<IFanService, FanService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

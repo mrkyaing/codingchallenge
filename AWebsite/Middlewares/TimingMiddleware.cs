@@ -3,7 +3,6 @@ public class TimingMiddleware
 {
     private readonly ILogger<TimingMiddleware> _logger;
     private readonly RequestDelegate _next;
-
     public TimingMiddleware(ILogger<TimingMiddleware> logger,RequestDelegate next)
     {
         this._logger = logger;
