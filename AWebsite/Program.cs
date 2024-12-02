@@ -2,10 +2,8 @@ using AWebsite.Extensions;
 using AWebsite.Services;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
 builder.Services.AddSingleton<ISingletonService>(new OperationService());
 builder.Services.AddScoped<IScopedService, OperationService>();
 builder.Services.AddTransient<ITransientService, OperationService>();
@@ -31,9 +29,7 @@ if (!app.Environment.IsDevelopment())
 app.UseTiming();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
 app.UseRouting();
-
 app.UseAuthorization();
 
 app.MapControllerRoute(

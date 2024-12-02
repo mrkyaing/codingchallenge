@@ -5,6 +5,8 @@ using SkillPracticeBackendDev.LSP;
 using SkillPracticeBackendDev.ISP;
 using SkillPracticeBackendDev.DIP;
 using SkillPracticeBackendDev.DI;
+using static SkillPracticeBackendDev.Linq.LinqGoodPractice;
+using SkillPracticeBackendDev.Linq;
 Console.WriteLine("Hello, World!");
 List<int> numbers=new List<int> { 1,7,9};
 var average = numbers.AverageHelper();
@@ -75,7 +77,7 @@ orderServiceWithEmail.PlaceOrder();
 INotificationService smsSender = new SmsSender();
 OrderService orderServiceWithSms = new OrderService(smsSender);
 orderServiceWithSms.PlaceOrder();
-
+/*
 Console.WriteLine("============DI===============");
 GameManager gameManager=new GameManager(new HumanPlayer(),new ComputerPlayer());
 do
@@ -89,3 +91,25 @@ do
         Console.WriteLine("It is a draw.");
     Console.Write("Play again:Y/N?)");
 } while (Console.ReadLine().ToUpper() == "Y");
+*/
+IsEvenDelegate isEvenDel = IsEven;
+List<int> nums = new List<int> { 1, 2, 3, 4, 5 };
+
+IEnumerable<int> evenNumbers = nums.Where(n => isEvenDel(n));
+foreach (int n in evenNumbers)
+{
+    Console.Write(n+",");
+}
+Console.WriteLine("============Linq===============");
+var teenAger = LinqGoodPractice.TeenagerStudents();
+foreach(var s in teenAger)
+{
+    Console.WriteLine(s);
+}
+Console.WriteLine("============Linq===============");
+var groupByStudents = from s in teenAger group s by s.Age into sg select new { k=sg.Key,v=sg};
+foreach (var g in groupByStudents)
+{
+    Console.WriteLine(g.k+" "+g.v);
+}
+Console.ReadKey();
