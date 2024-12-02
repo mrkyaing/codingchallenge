@@ -13,14 +13,18 @@ using System.Threading.Tasks;
 namespace SkillPracticeBackendDev.UnitTests.Systems.ApiControllers;
 public class FansControllerUnitTest
 {
+    private readonly Mock<IFanService> _mockFanService;
+
+    public FansControllerUnitTest()
+    {
+        _mockFanService = new Mock<IFanService>();
+    }
     [Fact]
     public async Task Get_onSuccess_ReturnStatusCode200()
     {
         //Arrange
-        var mockFanService=new Mock<IFanService>();
-        mockFanService.Setup(s => s.GetAllFansAsync())
-                                                            .ReturnsAsync(new List<Fan>());
-        var fansController=new FansController(mockFanService.Object);
+        _mockFanService.Setup(s => s.GetAllFansAsync()).ReturnsAsync(new List<Fan>());
+        var fansController=new FansController(_mockFanService.Object);
         //Act
         var result=(OkObjectResult)await fansController.SayHi();
         //Assert
@@ -31,23 +35,19 @@ public class FansControllerUnitTest
     public async Task Get_onSuccess_InvokeService()
     {
         //Arrange
-        var mockFanService = new Mock<IFanService>();
-        mockFanService.Setup(s => s.GetAllFansAsync())
-                                                            .ReturnsAsync(FansFixture.GetFans());
-        var fansController = new FansController(mockFanService.Object);
+        _mockFanService.Setup(s => s.GetAllFansAsync()).ReturnsAsync(FansFixture.GetFans());
+        var fansController = new FansController(_mockFanService.Object);
         //Act
         var result = (OkObjectResult)await fansController.GetFans();
         //Assert
-       mockFanService.Verify(service=>service.GetAllFansAsync(), Times.Once());
+       _mockFanService.Verify(service=>service.GetAllFansAsync(), Times.Once());
     }
     [Fact]
     public async Task Get_onSuccess_ReturnListOfFans()
     {
         //Arrange
-        var mockFanService = new Mock<IFanService>();
-        mockFanService.Setup(s => s.GetAllFansAsync())
-                                                    .ReturnsAsync(FansFixture.GetFans());
-        var fansController = new FansController(mockFanService.Object);
+        _mockFanService.Setup(s => s.GetAllFansAsync()).ReturnsAsync(FansFixture.GetFans());
+        var fansController = new FansController(_mockFanService.Object);
         //Act
         var result = (OkObjectResult)await fansController.GetFans();
         //Assert

@@ -20,7 +20,7 @@ public class ProductsControllerTests
     public void GetById_ShouldReturnOk_WhenProductExists()
     {
         // Arrange
-        var productId = 1;
+        var productId = 10;
         var product = new Product { Id = productId, Name = "Test Product" };
         _mockProductService.Setup(s => s.GetById(productId)).Returns(product);
 
