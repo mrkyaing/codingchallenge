@@ -22,6 +22,9 @@ catch (InvalidOperationException ex)
 {
     Console.WriteLine(ex.Message);
 }
+string greeting = "Hello,I am MG.I am from Thailand.";
+var rightGreeting = greeting.RightSubstring(10);
+Console.WriteLine(rightGreeting);
 Console.WriteLine("============SRP===============");
 // Employee data
 Employee employee = new Employee

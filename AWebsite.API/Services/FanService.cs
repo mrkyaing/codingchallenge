@@ -9,7 +9,13 @@ public class FanService : IFanService
             {
                 Id = 1,
                 Name = "Test",
-                Email="test@mail"
+                Email="test@example.com"
+            },
+             new Fan()
+            {
+                Id = 2,
+                Name = "MG",
+                Email="mg@gmail.com"
             }
         };
         return Task.FromResult(fans);

@@ -54,4 +54,16 @@ public class FansControllerUnitTest
       result.Should().BeOfType<OkObjectResult>();
       result.Value.Should().BeOfType<List<Fan>>();
     }
+
+    [Fact]
+    public async Task Get_onSuccess_ReturnNotFound()
+    {
+        //Arrange
+        _mockFanService.Setup(s => s.GetAllFansAsync()).ReturnsAsync(new List<Fan>());
+        var fansController = new FansController(_mockFanService.Object);
+        //Act
+        var result = (NotFoundResult)await fansController.GetFans();
+        //Assert
+        result.Should().BeOfType<NotFoundResult>();
+    }
 }

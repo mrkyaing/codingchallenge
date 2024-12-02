@@ -13,4 +13,9 @@ public static class UtilitiyHelperExtensions
             return (T)sources[1];
         throw new InvalidOperationException("This list does not have a second element .");
     }
+
+    public static string  RightSubstring(this string s,int count)
+    {
+        return s.Substring(s.Length-count,count);//Hello=5 , 
+    }
 }
