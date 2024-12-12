@@ -62,7 +62,6 @@ public class LinqGoodPractice
         };
         return students.GroupBy(g=>g.Age).Select(g=>new Student
         {
-
         });
     }
 }

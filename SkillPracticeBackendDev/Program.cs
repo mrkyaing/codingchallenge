@@ -112,4 +112,19 @@ foreach (var g in groupByStudents)
 {
     Console.WriteLine(g.k+" "+g.v);
 }
+// Set operations example
+var firstNames = new string[] { "John", "Jane", "Jim", "Jane" };
+var lastNames = new string[] { "Doe", "Smith", "Adams", "John" };
+Console.WriteLine("============Linq Distinct===============");
+var distinctFirstNames = firstNames.Distinct(); // "John", "Jane", "Jim"
+foreach (var i in distinctFirstNames)
+    Console.Write(i+" ");
+var unionNames = firstNames.Union(lastNames); // "John", "Jane", "Jim", "Doe", "Smith", "Adams"
+Console.WriteLine("============Linq Union===============");
+foreach (var i in unionNames)
+    Console.Write(i + " ");
+var intersectNames = firstNames.Intersect(lastNames); // "John"
+Console.WriteLine("============Linq Intersect===============");
+foreach (var i in intersectNames)
+    Console.Write(i + " ");
 Console.ReadKey();

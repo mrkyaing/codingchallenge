@@ -6,13 +6,13 @@ namespace AWebsite.API.Controllers;
 
 [ApiController]
 [Route("[controller]")]
-[ApiVersion("1.0")]
-public class WeatherForecastController : ControllerBase
+[ApiVersion("2.0")]
+public class WeatherForecast2Controller : ControllerBase
 {
     private readonly ILogger<WeatherForecastController> _logger;
     private readonly IWeatherService _weatherService;
 
-    public WeatherForecastController(ILogger<WeatherForecastController> logger,IWeatherService  weatherService)
+    public WeatherForecast2Controller(ILogger<WeatherForecastController> logger,IWeatherService  weatherService)
     {
         _logger = logger;
         _weatherService = weatherService;
